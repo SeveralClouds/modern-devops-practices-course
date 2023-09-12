@@ -11,7 +11,7 @@ A Git repository is a folder manged by Git.
 ## Github account
 GitHub is a Git hosting website. It allows you to store your repositories online, collaborate on open-source projects and work in private on codebases available to you or your organization. You will need to create a [Github](https://github.com/join) account which will be used throught the course.
 
-## Git execrices
+## Git exercises
 Clone the following repository locally and follow instructions in the README.md file: [Git Katas](https://github.com/eficode-academy/git-katas)
 
 ## Further reading
