@@ -1,5 +1,5 @@
 # Kubernetes II
-*This topic is be split in two parts.*
+*This topic is split in two parts.*
 
 ## Resources
 Here are some key resources we will be covering.
