@@ -12,4 +12,6 @@ Actions are the building blocks that power your workflow. A workflow can contain
 Clone the following repository locally and follow instructions in the README.md file: [Github Actions Katas](https://github.com/eficode-academy/github-actions-katas/tree/main)
 
 ## Further reading
+- Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation (Addison-Wesley Signature Series (Fowler)) 1st Edition by Jez Humble (Author), David Farley (Author)
+- Continuous Integration: Improving Software Quality and Reducing Risk 1st Edition by Paul M. Duvall (Author), Steve Matyas (Author), Andrew Glover (Author)
 - [Github Actions docs](https://docs.github.com/en/actions/quickstart)
