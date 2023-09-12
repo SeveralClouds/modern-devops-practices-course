@@ -34,3 +34,4 @@ We will focus on Pods, Deployments, Labels and Selectors in this first part. The
 
 ## Further reading
 - "Kubernetes: Up and Running", 3rd Edition, Brendan Burns and others, O'Reilly Media, Inc., ISBN: 9781098110208
+- [Kubernets docs](https://kubernetes.io/docs/concepts/overview/)
