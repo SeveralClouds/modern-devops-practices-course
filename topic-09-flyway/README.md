@@ -7,16 +7,20 @@ Flyway is a popular open-source database migration tool that helps manage and tr
 Install Flywat CLI or use the Docker wrapped Flyway CLI (`redgate/flyway`)
 Start up a database (we are going to use Docker to reduce OS overhead)
 ```
-$ docker run --name mysql -e MYSQL_USER=flyway -e MYSQL_PASSWORD=123456 -e MYSQL_DATABASE=example -d mysql 
+$ docker run --name mysql -e MYSQL_USER=flyway -e MYSQL_PASSWORD=123456 -e MYSQL_DATABASE=example -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql 
 ```
 Create a Flyway config directory
 ```
 $ mkdir -p ~/flyway/config
 ```
+Get the IP of the mysql container
+```
+$ docker inspect mysql | grep IPAddress
+```
 Create a file there named `flyway.conf`
 ```
 flyway.driver=com.mysql.jdbc.Driver
-flyway.url=jdbc:mysql://localhost:3306/customer_test?autoreconnect=true
+flyway.url=jdbc:mysql://<<IP address of the mysql container>>:3306/example?autoreconnect=true
 flyway.user=flyway
 flyway.password=123456
 ```
@@ -30,7 +34,7 @@ $ mkdir -p ~/flyway/db
 ```
 
 ### Create a migration
-Create a file in the migrations direcory named `V1__Create_person_table.sql`
+Create a file in the migrations direcory named `V0__Create_person_table.sql`
 ```
 create table PERSON (
     ID int not null,
@@ -49,7 +53,7 @@ $ docker run --rm -v "{absolute path to folder to store SQLite db file}:/flyway/
 ```
 
 ### Create a new migration
-Create a new migration file named `V2__create_email.sql`
+Create a new migration file named `V1__create_email.sql`
 ```
 create table email (
   email_id          int not null auto_increment primary key,
