@@ -16,10 +16,11 @@ Terraform generates a plan and prompts you for your approval before modifying yo
 Terraform configuration files are declarative, meaning that they describe the end state of your infrastructure. You do not need to write step-by-step instructions to create resources because Terraform handles the underlying logic. Terraform builds a resource graph to determine resource dependencies and creates or modifies non-dependent resources in parallel. This allows Terraform to provision resources efficiently.
 
 ## Terraform exercises
-- Go through the Terraform getting started [docs](https://developer.hashicorp.com/terraform/tutorials/aws-get-started).
+Go through the Terraform getting started [docs](https://developer.hashicorp.com/terraform/tutorials/aws-get-started).
 
 ### Exercise 1
 Create a VPC and deploy an EC2 instance. You can use the [VPC Terraform module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest).
+![VPC image](AWS-VPC-Nginx.png)
 
 ### Exercise 2
 Add an S3 bucket to your infrastructure. Turn on static website hosting and confirm that you can access it.
