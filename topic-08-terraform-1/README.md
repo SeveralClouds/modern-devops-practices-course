@@ -28,6 +28,10 @@ Add an S3 bucket to your infrastructure. Turn on static website hosting and conf
 ### Exercise 3
 Create an RDS database instance. SSH to your EC2 instance from the first exercise and prove that you can connect to the database using the mysql CLI.
 
+### Exercise 4 
+Use the VPC form Exercise 1 and add an ALB and an ASG.
+![VPC with ASG image](AWS-VPC-ASG-Nginx.png)
+
 ## Further reading
 - "Terraform: Up and Running", 3rd Edition, Yevgeniy Brikman, O'Reilly Media, Inc., ISBN: 9781098116743
 - "The Terraform Book", James Turnbull, Turnbull Press
